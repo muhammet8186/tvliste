@@ -3,7 +3,7 @@ import * as cheerio from "cheerio";
 
 const app = express();
 const PORT = process.env.PORT || 10000;
-const ALLOWED_HOSTS = (process.env.ALLOWED_HOSTS || "https://amp.tvfrekanslar.com/").split(",").map(x => x.trim().toLowerCase()).filter(Boolean);
+const ALLOWED_HOSTS = (process.env.ALLOWED_HOSTS || "https://blog.canlitvizle.tv/").split(",").map(x => x.trim().toLowerCase()).filter(Boolean);
 const MAX_PAGES = 25;
 
 app.use((req,res,next) => {
