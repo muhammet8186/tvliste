@@ -1,18 +1,21 @@
 {
-  "name": "tv-kaynak-tarayici",
-  "version": "4.0.0",
-  "private": true,
-  "type": "module",
+  "name": "desktop-video-sniffer",
+  "version": "1.0.0",
+  "description": "Tarayıcı ağ trafiğini dinleyerek video kaynaklarını yakalayan masaüstü uygulaması",
+  "main": "main.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "electron ."
   },
-  "engines": {
-    "node": ">=20"
-  },
-  "dependencies": {
-    "@sparticuz/chromium": "^138.0.2",
-    "cheerio": "^1.0.0",
-    "express": "^4.21.2",
-    "playwright-core": "^1.55.0"
+  "keywords": [
+    "video",
+    "sniffer",
+    "electron",
+    "m3u8",
+    "mp4"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.0.0"
   }
 }
